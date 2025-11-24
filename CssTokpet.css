@@ -1,0 +1,127 @@
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #8da9d4;
+    color: #222;
+}
+
+header {
+    background: #c0d6ff;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: Italic;
+    color: #444;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+}
+
+nav a.active,
+nav a:hover {
+    color: #0b63ff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 8%;
+    background: #eef4ff;
+    border-radius: 10px;
+    margin: 20px 8%;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: lch(31.8% 0.43 199.97);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 8%;
+}
+
+.produk-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.produk-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.harga {
+    font-weight: bold;
+    color: #444;
+    margin: 8px 0;
+}
+
+.btn-card {
+    padding: 8px 15px;
+    border: none;
+    background: #444;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
